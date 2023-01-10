@@ -3,8 +3,8 @@ if __name__ == "__main__":
     import sys
     total = 0
     if len(sys.argv) == 1:
-        print('{}'.format(0))
+        print('{}'.format(total))
     elif len(sys.argv) > 1:
-        for i in range(int(sys.argv)):
-            total += i
-            print('{}'.format(total))
+        for i in range(1, len(sys.argv)):
+            total += int(sys.argv[i])
+        print('{}'.format(total))
