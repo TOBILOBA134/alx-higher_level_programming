@@ -2,7 +2,7 @@
 
 def element_at(my_list, idx):
     if idx == "-":
-        return NULL
+        return None
     if idx > len(my_list):
         return None
     for i in range(len(my_list)):
